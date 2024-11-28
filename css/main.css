@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 @font-face {
   font-family: Arabia;
   src: url(../assets/HidayatullahDemo-mLp39.ttf);
