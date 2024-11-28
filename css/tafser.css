@@ -1,0 +1,76 @@
+@font-face {
+    font-family:Arabia;
+    src: url(../assets/HidayatullahDemo-mLp39.ttf);
+}
+body {
+    margin: 0px;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background-color: transparent; /* Initial background */
+      transition: background-color 0.6s; /* Smooth transition */
+      color: white; /* Text color */
+      font-family: "Alexandria", sans-serif;
+      
+  }
+  nav.scrolled {
+      background-color: rgba(0, 0, 0, 0.8); /* Background color after scrolling */
+  }
+  .logo{
+      font-size: 25px !important;
+  }
+  .block{
+      font-size: 25px;
+  }
+  .block:hover {
+    color: chartreuse !important;
+    transition: all 0.8s;
+  }
+  .main{
+      width: 100%;
+      margin-top:150px;
+      padding: 100px;
+  }
+  .sp{
+      width:250px !important;
+      height: 50px;
+      border: 4px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  p{
+      color: black;
+  }
+  button:hover{
+      border:4px solid yellow;
+      transition: all 0.6s;
+  }
+  .title{
+    font-size: 30px !important;
+    font-family: "Alexandria", sans-serif;
+    color: chartreuse;
+}
+#nameOfSurah{
+    width: 100%;
+    text-align: center;
+}
+@media all and (max-width: 500px) {
+    
+    .ulstyle {
+      background-color: #ffffff;
+      text-align: center;
+    }
+    .block {
+        color: black !important;
+        font-size: 15px;
+}
+
+}

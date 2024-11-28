@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Arabia;
+    src: url(../assets/HidayatullahDemo-mLp39.ttf);
+  }
+  
+  body {
+    margin: 0px;
+    
+    font-family: "Kufam", sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent; /* Initial background */
+    transition: background-color 0.9s; /* Smooth transition */
+    color: white; /* Text color */
+    font-family: "Alexandria", sans-serif;
+    z-index: 88;
+  }
+  nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Background color after scrolling */
+  }
+
+  .logo {
+    font-size: 25px !important;
+    color: chartreuse !important;
+  }
+  .block {
+    font-size: 25px;
+  }
+  .block:hover {
+    color: chartreuse !important;
+    transition: all 0.8s;
+  }
+  #contRadio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.radio-item {
+    background-size: cover;
+    background-position: center;
+    width: 400px; /* Set a fixed width */
+    height: 400px; /* Set a fixed height */
+    margin: 10px; /* Space between items */
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end; /* Align text at the bottom */
+    color: white; /* Text color */
+    position: relative; /* For absolute positioning of inner elements */
+}
+
+.radio-info {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    width: 100%; /* Full width for the info section */
+    text-align: center; /* Center text */
+}
+
+.listen-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #ff5722; /* Button color */
+    color: white; /* Button text color */
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    margin-top: 5px; /* Space above button */
+}
+
+.listen-button:hover {
+    background: #e64a19; /* Darker shade on hover */
+}
+@media all and (max-width: 500px) {
+    .ulstyle {
+      background-color: white;
+      text-align: center;
+    }
+    .block {
+      color: black !important;
+      font-size: 15px;
+    }
+   
+  }

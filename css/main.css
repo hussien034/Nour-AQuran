@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: Arabia;
+  src: url(../assets/HidayatullahDemo-mLp39.ttf);
+}
+
+body {
+  margin: 0px;
+  font-family: "Kufam", sans-serif;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent; /* Initial background */
+  transition: background-color 0.9s; /* Smooth transition */
+  color: white; /* Text color */
+  font-family: "Alexandria", sans-serif;
+  z-index: 88;
+}
+nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Background color after scrolling */
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/banner-s1-bg.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.logo {
+  font-size: 25px !important;
+  color: chartreuse !important;
+}
+.block {
+  font-size: 25px;
+}
+.block:hover {
+  color: chartreuse !important;
+  transition: all 0.8s;
+}
+.sec2 {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../assets/about-us-bg-icon.png);
+  background-size: 100% 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  font-family: "Alexandria", sans-serif;
+}
+.list-disc {
+  margin-top: 50px !important;
+}
+.contain-img {
+  display: flex !important;
+  justify-content: center;
+}
+.img1 {
+  width: 90%;
+  height: 400px;
+}
+.title {
+  font-size: 30px;
+  text-align: center;
+}
+.sup-title {
+  font-size: 20px;
+}
+.sec3 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url(../assets/service-bg.jpg);
+  background-size: cover; /* Cover will maintain the aspect ratio */
+  background-attachment: fixed; /* Use fixed for desktop and larger screens */
+}
+td {
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+}
+th {
+  color: aqua !important;
+}
+.contain-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.sec4 {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../assets/about-us-bg-icon.png);
+  background-size: 100% 100%;
+  font-family: "Alexandria", sans-serif;
+}
+.img3 {
+  width: 60%;
+}
+.bold {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 2.5;
+}
+.Quran-h {
+  font-size: 25px;
+}
+.contain-but {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn-1 {
+  width: 200px;
+}
+.sec5 {
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../assets/2masjid-maba-HA0_vlacM-Y-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  font-family: "Alexandria", sans-serif;
+}
+.tafser {
+  line-height: 2.5;
+}
+.title-tafser {
+  font-size: 30px;
+}
+.sec6 {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../assets/about-us-bg-icon.png);
+  background-size: 100% 100%;
+  font-family: "Alexandria", sans-serif;
+}
+.sec7{
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../assets/5FlDL.jpg);
+  background-size: 100% 100%;
+  font-family: "Alexandria", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.contain-img-ahades {
+  border-radius: 20px;
+}
+.title-Ahades {
+  font-size: 30px;
+}
+.sub-title-Ahades {
+  line-height: 2.5;
+  margin-top: 15px;
+}
+.Asker-title{
+  font-size: 30px;
+}
+.sub-title-Asker{
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 2.5;
+}
+footer{
+  background-color: chartreuse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+/*---------------------Responsive Desgin-----------------------------*/
+@media all and (max-width: 500px) {
+  .main {
+    background-position: center;
+    background-size: cover;
+  }
+  .sec2 {
+    background-position: center;
+    background-size: cover;
+    display: block !important;
+  }
+  .sec3 {
+    background-position: center;
+    background-size: cover;
+  }
+  .sec4 {
+    background-position: center;
+    background-size: cover;
+  }
+  .sec5 {
+    background-position: center;
+    background-size: cover;
+  }
+  .sec6 {
+    background-position: center;
+    background-size: cover;
+  }
+  .sec7{
+    background-position: center;
+    background-size: cover;
+    height: auto;
+  }
+  .ulstyle {
+    background-color: white;
+    text-align: center;
+  }
+  .block {
+    color: black !important;
+    font-size: 15px;
+  }
+  .img1 {
+    width: 100%; /* Make image responsive */
+    height: 400px; /* Maintain aspect ratio */
+  }
+}
+@media all and (max-width: 1000px) {
+  .sec2 {
+    display: block !important;
+    margin-top: 25px;
+    height: auto;
+  }
+  .sec3 {
+    height: auto;
+  }
+  .sec4 {
+    display: block !important;
+    margin-top: 25px;
+    height: auto;
+  }
+  .sec5 {
+    height: auto;
+  }
+  .sec6 {
+    height: auto;
+  }
+  .sec7 {
+    height: auto;
+  }
+  .contain-Ahades{
+    text-align: center;
+    margin: auto;
+  }
+}

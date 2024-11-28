@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Arabia;
+    src: url(../assets/HidayatullahDemo-mLp39.ttf);
+  }
+  
+  body {
+    margin: 0px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent; /* Initial background */
+    transition: background-color 0.9s; /* Smooth transition */
+    color: white; /* Text color */
+    font-family: "Alexandria", sans-serif;
+    z-index: 88;
+  }
+  nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Background color after scrolling */
+  }
+
+  .logo {
+    font-size: 25px !important;
+    color: chartreuse !important;
+  }
+  .block {
+    font-size: 25px;
+  }
+  .block:hover {
+    color: chartreuse !important;
+    transition: all 0.8s;
+  }
+  #contThker {
+    justify-content: center;
+    width: 100%;
+    margin-top: 150px;
+    line-height: 2.5;
+    padding: 20px;
+}
+.sp{
+    background-color: antiquewhite;
+    color: black;
+    width:  40px;
+    text-align: center;
+    border-radius: 50%;
+}
+@media all and (max-width: 500px) {
+    .ulstyle {
+      background-color: white;
+      text-align: center;
+    }
+    .block {
+      color: black !important;
+      font-size: 15px;
+    }
+   
+  }
